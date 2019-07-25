@@ -2,6 +2,16 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+function formatName(user) {
+  return user.firstName + ' ' + user.lastName;
+}
+const user = {
+  firstName: 'Harper',
+  lastName: 'Perez'
+};
+console.log(user)
+
+const element = <h1>Hello, world</h1>
 function App() {
   return (
     <div className="App">
@@ -24,3 +34,4 @@ function App() {
 }
 
 export default App;
+
